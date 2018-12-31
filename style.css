@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body { height: 100%; }
+body {
+    border: solid 10px #0099dd;
+    color: #333;
+    padding: 10px;
+    font-size: 15px;
+}
+#results {
+    color: red;
+    font-size: 40px;
+}
