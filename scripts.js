@@ -18,7 +18,7 @@ const questions = [
     'Had or given "blue balls"', 'Had an orgasm due to someone else\'s manipulation',
     'Sent a sexually explicit text or instant message', 'Sent or received sexually explicit photographs',
     'Engaged in sexually explicit activity over video chat', 'Cheated on a significant other during a relationship',
-    'Purchased contraceptives', 'Gave oral sex', 'Received oral sex', 'Ingested someone else&rsquo;s genital secretion',
+    'Purchased contraceptives', 'Gave oral sex', 'Received oral sex', 'Ingested someone else\'s genital secretion',
     'Used a sex toy with a partner', 'Spent the night with a MPS', 'Been walked in on while engaging in a sexual act',
     'Kicked a roommate out to commit a sexual act', 'Ingested alcohol in a non-religious context', 'Played a drinking game',
     'Been drunk', 'Faked sobriety to parents or teachers', 'Had severe memory loss due to alcohol', 'Used tobacco',
