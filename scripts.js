@@ -49,7 +49,7 @@ for (question of questions) {
     let label = document.createElement('label');
     let input = document.createElement('input');
     let text = document.createTextNode(question + '?');
-    input.class = 'checkbox';
+    input.classList.add('checkbox');
     input.type = 'checkbox';
     label.appendChild(input);
     label.appendChild(text);
@@ -59,6 +59,12 @@ for (question of questions) {
 
 submit.onclick = function() {
     console.log('Calculating score.');
+    let points = 100;
+    for (checkbox of document.getElementsByClassName('checkbox')) {
+        if (checkbox.checked) points--;
+        console.log(checkbox);
+    }
+    score.textContent = points;
     test.classList.remove('shown');
     results.classList.add('shown');
 };
