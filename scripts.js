@@ -1,7 +1,8 @@
 const test = document.getElementById('test'),
       list = document.getElementById('list'),
       results = document.getElementById('results'),
-      submit = document.getElementById('submit');
+      submit = document.getElementById('submit'),
+      reset = document.getElementById('reset');
 
 const questions = [
     'Held hands romantically', 'Been on a date', 'Been in a relationship', 'Danced without leaving room for Jesus',
@@ -62,9 +63,10 @@ submit.onclick = function() {
     let points = 100;
     for (checkbox of document.getElementsByClassName('checkbox')) {
         if (checkbox.checked) points--;
-        console.log(checkbox);
     }
     score.textContent = points;
     test.classList.remove('shown');
     results.classList.add('shown');
 };
+
+reset.onclick = location.reload;

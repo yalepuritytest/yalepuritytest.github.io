@@ -17,6 +17,7 @@ body {
     padding: 10px;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 h1 {
     color: #09d;
@@ -37,15 +38,18 @@ input, button {
 }
 #test {
     display: none;
+    text-align: left;
 }
 #results {
-    color: red;
-    font-size: 40px;
     display: none;
 }
 #results.shown,
 #test.shown {
     display: block;
+}
+#results #score {
+    color: red;
+    font-size: 40px;
 }
 button {
     font: inherit;
