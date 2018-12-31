@@ -11,20 +11,26 @@
     margin: 0;
     padding: 0;
 }
-html, body { height: 100%; }
 body {
-    border: solid 10px #09d;
+    border-top: solid 10px #09d;
     color: #333;
     padding: 10px;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 h1 {
     color: #09d;
     font-size: 40px;
 }
+ol {
+    margin-left: 35px;
+    line-height: 1.5;
+}
 label {
     display: block;
+}
+input {
+    margin-right: 5px;
 }
 input, button {
     cursor: pointer;
