@@ -43,6 +43,19 @@ const questions = [
     'Paid or been paid for a sexual act', 'Committed an act of voyeurism', 'Committed an act of incest', 'Engaged in bestiality',
 ];
 
+for (question of questions) {
+    let li = document.createElement('li');
+    let label = document.createElement('label');
+    let input = document.createElement('input');
+    let text = document.createTextNode(question + '?');
+    input.class = 'checkbox';
+    input.type = 'checkbox';
+    label.appendChild(input);
+    label.appendChild(text);
+    li.appendChild(label);
+    list.appendChild(li);
+}
+
 submit.onclick = function() {
     if (document.getElementById('carlos')) results.textContent = 'leave'
     else results.textContent = (document.getElementById('ea').checked ? 'You are EA so you get human rights regardless of any other societally condemned behaviors in which you may have partaken, congrats' : 'EW RD GROSS GET AWAY');
