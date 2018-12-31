@@ -35,9 +35,17 @@ input {
 input, button {
     cursor: pointer;
 }
+#test {
+    display: none;
+}
 #results {
     color: red;
     font-size: 40px;
+    display: none;
+}
+#results.shown,
+#test.shown {
+    display: block;
 }
 button {
     font: inherit;
