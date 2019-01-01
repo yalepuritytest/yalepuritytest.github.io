@@ -44,6 +44,15 @@ const questions = [
     'Had period sex', 'Had anal sex', 'Had a pregnancy scare', 'Impregnated someone or been impregnated',
     'Paid or been paid for a sexual act', 'Committed an act of voyeurism', 'Committed an act of incest', 'Engaged in bestiality',
 ];
+const bonus = {
+    'Petted Handsome Dan': 5,
+    'Been in Branford': 5,
+    'Complained about the Freshman Screw being renamed': -1,
+    'Made a joke at Harvard\'s expense': 5,
+    'Aspired to go to Harvard': -3,
+    'Applied to Harvard': -5,
+    'Applied to Harvard through Single Choice Early Action': -10,
+}
 
 for (question of questions) {
     let li = document.createElement('li');
