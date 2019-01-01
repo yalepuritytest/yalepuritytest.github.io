@@ -1,5 +1,6 @@
 const test = document.getElementById('test'),
       list = document.getElementById('list'),
+      bonus = document.getElementById('bonus'),
       results = document.getElementById('results'),
       submit = document.getElementById('submit'),
       reset = document.getElementById('reset');
@@ -44,7 +45,7 @@ const questions = [
     'Had period sex', 'Had anal sex', 'Had a pregnancy scare', 'Impregnated someone or been impregnated',
     'Paid or been paid for a sexual act', 'Committed an act of voyeurism', 'Committed an act of incest', 'Engaged in bestiality',
 ];
-const bonus = {
+const bonusQuestions = {
     'Petted Handsome Dan': 5,
     'Been in Branford': 5,
     'Complained about the Freshman Screw being renamed': -1,
@@ -68,6 +69,19 @@ for (question of questions) {
     label.appendChild(text);
     li.appendChild(label);
     list.appendChild(li);
+}
+
+for (question of bonusQuestions.keys()) {
+    let li = document.createElement('li');
+    let label = document.createElement('label');
+    let input = document.createElement('input');
+    let text = document.createTextNode(question + '?');
+    input.classList.add('checkbox');
+    input.type = 'checkbox';
+    label.appendChild(input);
+    label.appendChild(text);
+    li.appendChild(label);
+    bonus.appendChild(li);
 }
 
 submit.onclick = function() {
