@@ -71,13 +71,14 @@ for (question of questions) {
     list.appendChild(li);
 }
 
-for (question of bonusQuestions.keys()) {
+for (question of Object.keys(bonusQuestions)) {
     let li = document.createElement('li');
     let label = document.createElement('label');
     let input = document.createElement('input');
     let text = document.createTextNode(question + '?');
     input.classList.add('checkbox');
     input.type = 'checkbox';
+    input.points = bonusQuestions[question];
     label.appendChild(input);
     label.appendChild(text);
     li.appendChild(label);
@@ -87,8 +88,11 @@ for (question of bonusQuestions.keys()) {
 submit.onclick = function() {
     console.log('Calculating score.');
     let points = 100;
-    for (checkbox of document.getElementsByClassName('checkbox')) {
+    for (checkbox of list.getElementsByClassName('checkbox')) {
         if (checkbox.checked) points--;
+    }
+    for (checkbox of bonus.getElementsByClassName('checkbox')) {
+        if (checkbox.checked) points += parseInt(checkbox.points);
     }
     score.textContent = points;
     test.classList.remove('shown');
