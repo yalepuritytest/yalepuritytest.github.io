@@ -50,8 +50,11 @@ const bonus = {
     'Complained about the Freshman Screw being renamed': -1,
     'Made a joke at Harvard\'s expense': 5,
     'Aspired to go to Harvard': -3,
+    'Worn a Harvard tee shirt': -4,
     'Applied to Harvard': -5,
     'Applied to Harvard through Single Choice Early Action': -10,
+    'Watched every Josh Beasley video': 4,
+    'Been followed on Instagram by Josh Beasley': 8,
 }
 
 for (question of questions) {
