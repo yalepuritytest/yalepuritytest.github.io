@@ -1,9 +1,8 @@
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-    unicode-range: U+0000-00FF;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KExcOPIDU.woff2) format('woff2');
 }
 
 * {
@@ -16,7 +15,7 @@ body {
     color: #333;
     padding: 10px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     text-align: center;
 }
 h1 {
