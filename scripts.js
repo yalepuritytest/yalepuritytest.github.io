@@ -45,18 +45,6 @@ const questions = [
     'Had period sex', 'Had anal sex', 'Had a pregnancy scare', 'Impregnated someone or been impregnated',
     'Paid or been paid for a sexual act', 'Committed an act of voyeurism', 'Committed an act of incest', 'Engaged in bestiality',
 ];
-const bonusQuestions = {
-    'Petted Handsome Dan': 5,
-    'Been in Branford': 5,
-    'Complained about the Freshman Screw being renamed': -1,
-    'Made a joke at Harvard\'s expense': 5,
-    'Aspired to go to Harvard': -3,
-    'Worn a Harvard tee shirt': -4,
-    'Applied to Harvard': -5,
-    'Applied to Harvard through Single Choice Early Action': -10,
-    'Watched every Josh Beasley video': 4,
-    'Been followed on Instagram by Josh Beasley': 8,
-}
 
 for (question of questions) {
     let li = document.createElement('li');
@@ -69,20 +57,6 @@ for (question of questions) {
     label.appendChild(text);
     li.appendChild(label);
     list.appendChild(li);
-}
-
-for (question of Object.keys(bonusQuestions)) {
-    let li = document.createElement('li');
-    let label = document.createElement('label');
-    let input = document.createElement('input');
-    let text = document.createTextNode(question + '?');
-    input.classList.add('checkbox');
-    input.type = 'checkbox';
-    input.points = bonusQuestions[question];
-    label.appendChild(input);
-    label.appendChild(text);
-    li.appendChild(label);
-    bonus.appendChild(li);
 }
 
 submit.onclick = function() {
