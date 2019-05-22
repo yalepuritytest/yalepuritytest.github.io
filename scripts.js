@@ -2,7 +2,8 @@ const test = document.getElementById('test'),
       list = document.getElementById('list'),
       results = document.getElementById('results'),
       submit = document.getElementById('submit'),
-      reset = document.getElementById('reset');
+      reset = document.getElementById('reset'),
+      restart = document.getElementById('restart');
 
 const questions = [
     'Held hands romantically', 'Been on a date', 'Been in a relationship', 'Danced without leaving room for Jesus',
@@ -69,4 +70,4 @@ submit.onclick = function() {
     results.classList.add('shown');
 };
 
-reset.onclick = location.reload;
+reset.onclick = restart.onclick = function() { location.reload(); };
