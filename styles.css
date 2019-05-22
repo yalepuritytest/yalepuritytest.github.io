@@ -11,16 +11,15 @@
     padding: 0;
 }
 body {
-    border-top: solid 10px #09d;
+    border-top: solid 10px #00356b;
     color: #333;
     padding: 10px;
     font-size: 16px;
     font-family: 'PT Sans', sans-serif;
     text-align: center;
 }
-h1 {
-    color: #09d;
-    font-size: 40px;
+img {
+    max-width: 8in;
 }
 ol {
     margin-left: 35px;
@@ -53,8 +52,8 @@ input, button {
 button {
     font: inherit;
     background: none;
-    border: solid 2px #09d;
-    color: #09d;
+    border: solid 2px #00356b;
+    color: #00356b;
     padding: 5px 8px;
     margin-top: 5px;
 }
