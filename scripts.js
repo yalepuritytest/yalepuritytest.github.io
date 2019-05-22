@@ -1,6 +1,5 @@
 const test = document.getElementById('test'),
       list = document.getElementById('list'),
-      bonus = document.getElementById('bonus'),
       results = document.getElementById('results'),
       submit = document.getElementById('submit'),
       reset = document.getElementById('reset');
@@ -64,9 +63,6 @@ submit.onclick = function() {
     let points = 100;
     for (checkbox of list.getElementsByClassName('checkbox')) {
         if (checkbox.checked) points--;
-    }
-    for (checkbox of bonus.getElementsByClassName('checkbox')) {
-        if (checkbox.checked) points += parseInt(checkbox.points);
     }
     score.textContent = points;
     test.classList.remove('shown');
