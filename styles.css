@@ -19,7 +19,8 @@ body {
     text-align: center;
 }
 img {
-    max-width: 8in;
+    width: 500px;
+    max-width: 95vw;
 }
 ol {
     margin-left: 35px;
