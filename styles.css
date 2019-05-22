@@ -22,6 +22,9 @@ img {
     width: 500px;
     max-width: 95vw;
 }
+p {
+    text-align: center;
+}
 ol {
     margin-left: 35px;
     line-height: 1.5;
